@@ -10,7 +10,7 @@ import MobileDevlopment from "./page/MobileDevlopment/MobileDevlopment";
 import DigitalMarketing from "./page/DigitalMarketing/DigitalMarketing";
 import GraphicsDesign from "./page/GraphicsDesign/GraphicsDesign";
 import JewelleryDesign from "./page/JewelleryDesign/JewelleryDesign";
-import WebDevelopmentPage from "./page/webDevlpment/webDevlopment";
+import WebDevelopmentPage from "./page/webDevlpment/WebDevlopmentPage";
 
 const App = () => {
   return (
