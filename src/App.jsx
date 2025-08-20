@@ -6,11 +6,11 @@ import Footer from "./components/footer/footer";
 import AboutUs from "./page/AboutUs/AboutUs";
 import Project from "./page/Project/Project";
 import ContactUs from "./page/Contact-Us/ContactUs";
-import WebDevlopment from "./page/webDevlpment/webDevlopment";
 import MobileDevlopment from "./page/MobileDevlopment/MobileDevlopment";
 import DigitalMarketing from "./page/DigitalMarketing/DigitalMarketing";
 import GraphicsDesign from "./page/GraphicsDesign/GraphicsDesign";
 import JewelleryDesign from "./page/JewelleryDesign/JewelleryDesign";
+import WebDevelopmentPage from "./page/webDevlpment/webDevlopment";
 
 const App = () => {
   return (
@@ -28,7 +28,7 @@ const App = () => {
           <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/project" element={<Project />} />
           <Route path="/contact" element={<ContactUs />} />
-          <Route path="/web-development" element={<WebDevlopment />} />
+          <Route path="/web-development" element={<WebDevelopmentPage />} />
           <Route path="/mobile-app" element={<MobileDevlopment />} />
           <Route path="/digital-marketing" element={<DigitalMarketing />} />
           <Route path="/graphics-design" element={<GraphicsDesign />} />

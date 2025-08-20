@@ -6,17 +6,17 @@ import CMS from '../../components/CMS/CMS'
 import CRM from '../../components/CRM/CRM'
 import CustomDevelopment from '../../components/CustomDevelopment/CustomDevelopment'
 
-const WebDevlopment = () => {
+const WebDevelopmentPage = () => {
   return (
     <div>
-        <HeroSection/>
-        <WebDevelopment />
-        <Ecommerce />
-        <CMS />
-        <CRM />
-        <CustomDevelopment />
+      <HeroSection />
+      <WebDevelopment />
+      <Ecommerce />
+      <CMS />
+      <CRM />
+      <CustomDevelopment />
     </div>
   )
 }
 
-export default WebDevlopment
+export default WebDevelopmentPage
