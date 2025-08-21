@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaBars, FaChevronDown, FaTimes } from "react-icons/fa";
 import logo from "../../assets/pixoraLogo.png";
-import TopBar from "../Topbar/topbar";
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
@@ -38,7 +37,7 @@ const Header = () => {
 
   return (
     <header className="w-full shadow-md">
-      <TopBar />
+
 
       <div className="flex justify-between items-center max-w-7xl mx-auto px-4 py-3 relative">
         <Link to="/home" className="flex items-center gap-3">
