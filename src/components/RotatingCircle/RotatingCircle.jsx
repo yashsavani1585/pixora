@@ -143,11 +143,9 @@ import shopify from "../../assets/shopify.svg";
 const innerOrbitIcons = [
   {
     src: xd,
-    label: "Xd",
   },
   {
     src: Ai,
-    label: "Ai",
   },
 ];
 
@@ -155,15 +153,12 @@ const innerOrbitIcons = [
 const outerOrbitIcons = [
   {
     src: react,
-    label: "React JS",
   },
   {
     src: js,
-    label: "JavaScript",
   },
   {
     src: shopify,
-    label: "Shopify",
   },
 ];
 
@@ -243,9 +238,7 @@ export default function RotatingCircle() {
                       className="w-8 h-8 sm:w-10 sm:h-10"
                     />
                   </div>
-                  <span className="text-xs sm:text-sm mt-1 font-medium text-gray-700">
-                    {icon.label}
-                  </span>
+
                 </div>
               );
             })}
@@ -280,9 +273,7 @@ export default function RotatingCircle() {
                   <div className="w-16 h-16 rounded-full bg-white shadow-md flex items-center justify-center border border-gray-300">
                     <img src={icon.src} alt={icon.label} className="w-9 h-9" />
                   </div>
-                  <span className="text-xs mt-1 font-medium text-gray-700">
-                    {icon.label}
-                  </span>
+
                 </div>
               );
             })}
