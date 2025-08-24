@@ -1,20 +1,32 @@
 import React from "react";
-import brand from "../../assets/Brand.png"
+import brand from "../../assets/Brand.png";
 
 const BrandingIdentity = () => {
   return (
-    <section className="py-16 px-8 flex flex-col md:flex-row items-center justify-between">
-      <img src={brand} alt="Branding" className="w-full max-w-md ml-29" />
+    <section className="py-16 px-4 sm:px-6 lg:px-12">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center gap-10">
+        
+        {/* Left Side - Image */}
+        <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
+          <img
+            src={brand}
+            alt="Branding"
+            className="w-full max-w-sm sm:max-w-md lg:max-w-lg object-contain"
+          />
+        </div>
 
-      <div className="md:ml-1 mr-60 mt-8 md:mt-0">
-        <h2 className="text-3xl font-bold mb-4">Branding & Identity</h2>
-        <ul className="space-y-3 text-lg text-gray-700">
-          <li>Logo and Identity Design</li>
-          <li>Brand Strategy</li>
-          <li>Print Collateral</li>
-          <li>Investor Decks</li>
-          <li>Brand Collateral (folders, envelopes, etc.)</li>
-        </ul>
+        {/* Right Side - Text */}
+        <div className="w-full lg:w-1/2 text-center lg:text-left">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-6">Branding & Identity</h2>
+          <ul className="space-y-3 text-base sm:text-lg text-gray-700 list-disc list-inside">
+            <li>Logo and Identity Design</li>
+            <li>Brand Strategy</li>
+            <li>Print Collateral</li>
+            <li>Investor Decks</li>
+            <li>Brand Collateral (folders, envelopes, etc.)</li>
+          </ul>
+        </div>
+
       </div>
     </section>
   );
