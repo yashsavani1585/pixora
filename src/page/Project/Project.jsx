@@ -1,12 +1,12 @@
-import React from 'react'
-import ComingSoon from '../../components/ComingSoon/ComingSoon'
+import React from "react";
+import ComingSoon from "../../components/ComingSoon/ComingSoon";
 
 const Project = () => {
   return (
-    <div>
-        <ComingSoon/>
+    <div className="w-full h-screen">
+      <ComingSoon />
     </div>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;
