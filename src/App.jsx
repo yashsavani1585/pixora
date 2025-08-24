@@ -11,10 +11,13 @@ import DigitalMarketing from "./page/DigitalMarketing/DigitalMarketing";
 import GraphicsDesign from "./page/GraphicsDesign/GraphicsDesign";
 import JewelleryDesign from "./page/JewelleryDesign/JewelleryDesign";
 import WebDevelopmentPage from "./page/webDevlpment/WebDevlopmentPage";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
+
       <div>
         <Header />
 

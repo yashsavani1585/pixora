@@ -14,74 +14,72 @@ import logo from "../../assets/pixoraLogo1.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#e0f2f8] text-gray-800 py-16 px-6 md:px-20">
-      <div className="grid md:grid-cols-4 gap-10">
+    <footer className="bg-[#e0f2f8] text-gray-800 py-12 px-6 md:px-12 lg:px-20">
+      {/* Responsive Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
         {/* Company Info */}
         <div>
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Pixora Logo" className="h-26 w-auto" />
+            <img src={logo} alt="Pixora Logo" className="h-16 w-auto" />
             <h2 className="text-xl font-bold text-gray-900 leading-tight">
               PIXORA <br /> TECHNOLOGIES
             </h2>
           </div>
-          <p className="mt-2 text-gray-700">Where Ideas Go Digital.</p>
+          <p className="mt-2 text-gray-700 text-sm md:text-base">
+            Where Ideas Go Digital.
+          </p>
           <p className="mt-4 text-gray-600 text-sm leading-relaxed">
             PIXORA Technologies is a leading tech-giant company in India with
-            over years of experience in mobile app development and web
-            development services.
+            years of experience in mobile app development and web development
+            services.
           </p>
 
           <h3 className="mt-6 font-semibold text-gray-900">Follow Us</h3>
 
-          <div className="flex gap-4 mt-3">
+          <div className="flex flex-wrap gap-4 mt-3">
             <a
               href="https://www.linkedin.com/company/pixora-technologies/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-900 hover:text-blue-600"
             >
-              <FaLinkedin size={28} />
+              <FaLinkedin size={24} />
             </a>
-
             <a
-              href="#"
+              href="https://x.com/PIXORA2474"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-900 hover:text-blue-400"
             >
-              <FaSquareXTwitter size={28} />
+              <FaSquareXTwitter size={24} />
             </a>
-
             <a
               href="https://www.instagram.com/pixora_infotech?igsh=MTllZzNjb2V2bXlicQ=="
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-900 hover:text-pink-500"
             >
-              <FaInstagram size={28} />
+              <FaInstagram size={24} />
             </a>
-
             <a
               href="mailto:pixoratechnologies@gmail.com"
               className="text-gray-900 hover:text-red-500"
             >
-              <FaEnvelope size={28} />
+              <FaEnvelope size={24} />
             </a>
-
             <a
               href="tel:+919274279905"
               className="text-gray-900 hover:text-green-500"
             >
-              <FaPhoneAlt size={28} />
+              <FaPhoneAlt size={24} />
             </a>
-
             <a
               href="https://wa.me/919274279905"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-900 hover:text-green-600"
             >
-              <FaWhatsapp size={28} />
+              <FaWhatsapp size={24} />
             </a>
           </div>
         </div>
@@ -91,7 +89,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold text-gray-900 mb-4">
             Get In Touch
           </h3>
-          <ul className="space-y-4 text-gray-700">
+          <ul className="space-y-4 text-gray-700 text-sm md:text-base">
             <li className="flex items-center gap-2">
               <FaEnvelope /> pixoratechnologies@gmail.com
             </li>
@@ -114,7 +112,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold text-gray-900 mb-4">
             Quick Links
           </h3>
-          <ul className="space-y-3 text-gray-700">
+          <ul className="space-y-3 text-gray-700 text-sm md:text-base">
             <li>
               <Link to="/" className="hover:text-blue-600">
                 Home
@@ -143,33 +141,24 @@ const Footer = () => {
           <h3 className="text-lg font-semibold text-gray-900 mb-4">
             Services
           </h3>
-          <ul className="space-y-3 text-gray-700">
+          <ul className="space-y-3 text-gray-700 text-sm md:text-base">
             <li>
               <Link to="/mobile-app" className="hover:text-blue-600">
                 Mobile App Development
               </Link>
             </li>
             <li>
-              <Link
-                to="/web-development"
-                className="hover:text-blue-600"
-              >
+              <Link to="/web-development" className="hover:text-blue-600">
                 Web Development
               </Link>
             </li>
             <li>
-              <Link
-                to="/digital-marketing"
-                className="hover:text-blue-600"
-              >
+              <Link to="/digital-marketing" className="hover:text-blue-600">
                 Digital Marketing
               </Link>
             </li>
             <li>
-              <Link
-                to="/services/product-design"
-                className="hover:text-blue-600"
-              >
+              <Link to="/services/product-design" className="hover:text-blue-600">
                 Product Design
               </Link>
             </li>
@@ -182,18 +171,12 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link
-                to="/graphics-design"
-                className="hover:text-blue-600"
-              >
+              <Link to="/graphics-design" className="hover:text-blue-600">
                 Graphic Design
               </Link>
             </li>
             <li>
-              <Link
-                to="/jewellery-design"
-                className="hover:text-blue-600"
-              >
+              <Link to="/jewellery-design" className="hover:text-blue-600">
                 Jewellery Design
               </Link>
             </li>
