@@ -138,6 +138,8 @@ import xd from "../../assets/adobe-xd-2.svg";
 import js from "../../assets/javascript-r.svg";
 import react from "../../assets/react-2.svg";
 import shopify from "../../assets/shopify.svg";
+import node from "../../assets/nodejs-icon.svg";
+import wp from "../../assets/wordpress-icon.svg"
 
 // Inner orbit (2 icons)
 const innerOrbitIcons = [
@@ -147,6 +149,9 @@ const innerOrbitIcons = [
   {
     src: Ai,
   },
+  {
+    src: node,
+  } 
 ];
 
 // Outer orbit (3 icons)
@@ -160,6 +165,9 @@ const outerOrbitIcons = [
   {
     src: shopify,
   },
+   {
+    src: wp,
+  }
 ];
 
 export default function RotatingCircle() {
@@ -185,7 +193,9 @@ export default function RotatingCircle() {
     <div className="flex items-center justify-center min-h-30 bg-white px-4">
       <div
         ref={containerRef}
-        className="relative w-[100vw] h-[100vw] max-w-[650px] max-h-[650px]"
+        className="relative 
+  w-[250px] sm:w-[400px] md:w-[600px] lg:w-[600px] xl:w-[600px] 
+  aspect-square"
       >
         {/* Central Circle */}
         <div className="absolute inset-0 flex items-center  justify-center z-30">
